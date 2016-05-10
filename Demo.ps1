@@ -14,13 +14,13 @@ psedit .\DemoPester\It.Tests.ps1
 
 ## Gotchas
 # Showing how braces work
-psedit .\DemoPester\Test-Braces.Tests.ps1; 'Invoke-Pester .\DemoPester\test-braces.tests.ps1 -Tag Test1' | Out-Clipboard
+psedit .\DemoPester\Test-Braces.Tests.ps1; 'Invoke-Pester .\DemoPester\test-braces.tests.ps1 -Tag Test1' | Set-Clipboard
 # Context blocks being smallest Mocking block
-psedit .\DemoPester\Test-ContextMock.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-ContextMock.Tests.ps1 -Tag Test1' | Out-Clipboard
+psedit .\DemoPester\Test-ContextMock.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-ContextMock.Tests.ps1 -Tag Test1' | Set-Clipboard
 # Fixture is a Scriptblock
-psedit .\DemoPester\Test-FixtureBraces.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-FixtureBraces.Tests.ps1 -Tag Test1' | Out-Clipboard
+psedit .\DemoPester\Test-FixtureBraces.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-FixtureBraces.Tests.ps1 -Tag Test1' | Set-Clipboard
 # Arrays
-psedit .\DemoPester\Test-Arrays.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-Array.Tests.ps1 -Tag Test1' | Out-Clipboard
+psedit .\DemoPester\Test-Arrays.Tests.ps1; 'Invoke-Pester .\DemoPester\Test-Array.Tests.ps1 -Tag Test1' | Set-Clipboard
 
 
 ## ISESteroids
