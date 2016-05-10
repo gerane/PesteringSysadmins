@@ -1,6 +1,3 @@
-Remove-Module [P]ester
-Import-Module Pester
-
 $MarkdownPath = "$PSScriptRoot\Resources\Resources.md"
 $Markdown = Get-Content -Path $MarkdownPath
 $Lines = $Markdown | Select-String -Pattern '^\* \[.*' -AllMatches
