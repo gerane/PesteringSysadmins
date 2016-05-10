@@ -1,3 +1,4 @@
+Remove-Module [P]ester
 Import-Module Pester
 
 $MarkdownPath = "$PSScriptRoot\Resources\Resources.md"
