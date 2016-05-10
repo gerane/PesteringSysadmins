@@ -1,5 +1,7 @@
-Import-Module -Name Pester ; if (! (Test-Path -Path Demo:\)) { $Null = New-PSDrive -Name Demo -PSProvider FileSystem -Root (Get-GithubRepoDir -Name PesteringSysadmins) -Description 'Pester Demo' -Scope Global }; Set-Location -Path Demo:
+Import-Module -Name Pester ; if (! (Test-Path -Path Demo:\)) { $Null = New-PSDrive -Name Demo -PSProvider FileSystem -Root (Get-GithubRepoDir -Name PesteringSysadmins) -Description 'Pester Demo' -Scope Global }; Set-Location -Path Demo:; $Powerpoint = Get-ChildItem -Path 'C:\Program Files\*POWERPNT.exe' -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
 
+## PowerPoint
+Start-Process $Powerpoint -ArgumentList '/S ".\PesteringSysadmins.pptx"' -WindowStyle Maximized
 
 ## Commands
 # Describe
