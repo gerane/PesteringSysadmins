@@ -12,15 +12,15 @@
 }
 
 
-Describe "Test-Braces" -Tags Test1 {
+Describe 'Test-Braces' -Tags Test1 {
     
-    It "No Curly Braces" {
+    It 'No Curly Braces' {
         
         $Results = Test-Pester -Number '1'
         $Results | Should Be $true
     }
 
-    It "Curly Braces" {
+    It 'Curly Braces' {
         
         $Results = { Test-Pester -Number '1' }
         $Results | Should Be $True
@@ -28,45 +28,45 @@ Describe "Test-Braces" -Tags Test1 {
 
 }
 
-Describe "Test-Braces" -Tags Test2 {
+Describe 'Test-Braces' -Tags Test2 {
     
-    It "No Curly Braces" {
+    It 'No Curly Braces' {
         
         $Results = Test-Pester -Number '1'
         $Results | Should Be $Null
     }
 
-    It "Curly Braces" {
+    It 'Curly Braces' {
         
         $Results = { Test-Pester -Number '1' }
         $Results | Should Be $Null
     }
 }
 
-Describe "Test-Braces" -Tags Test3 {
+Describe 'Test-Braces' -Tags Test3 {
     
-    It "No Curly Braces" {
+    It 'No Curly Braces' {
         
         $Results = Test-Pester -Number '1'
         $Results | Should Be $True
     }
 
-    It "Curly Braces" {
+    It 'Curly Braces' {
         
         $Results = { Test-Pester -Number '1' }
         $Results | Should Not Throw
     }
 }
 
-Describe "Test-Braces" -Tags Test4 {
+Describe 'Test-Braces' -Tags Test4 {
     
-    It "No Curly Braces - Errors" {
+    It 'No Curly Braces' {
         
         $Results = Test-Pester -Number '5'
-        $Results | Should Be $null
+        $Results | Should Throw
     }
 
-    It "Curly Braces" {
+    It 'Curly Braces' {
         
         $Results = { Test-Pester -Number '5' }
         $Results | Should Throw
